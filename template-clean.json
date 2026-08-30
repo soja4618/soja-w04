@@ -1,0 +1,14 @@
+{
+  "version": "2025-09-27",
+  "description": "Clean trace integrity — all hashes match expected values",
+  "traces": [
+    {"id": "trace-001", "hash": "a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456"},
+    {"id": "trace-002", "hash": "b2c3d4e5f67890123456789012345678901bcdef12345678901bcdef1234567"},
+    {"id": "trace-003", "hash": "c3d4e5f678901234567890123456789012cdef123456789012cdef12345678"}
+  ],
+  "rules": [
+    {"type": "integrity", "operator": "equals", "expected": "a1b2c3d4e5f6789012345678901234567890abcdef1234567890abcdef123456"},
+    {"type": "integrity", "operator": "equals", "expected": "b2c3d4e5f67890123456789012345678901bcdef12345678901bcdef1234567"},
+    {"type": "integrity", "operator": "equals", "expected": "c3d4e5f678901234567890123456789012cdef123456789012cdef12345678"}
+  ]
+}

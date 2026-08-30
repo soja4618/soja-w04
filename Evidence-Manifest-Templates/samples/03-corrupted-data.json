@@ -1,0 +1,43 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Corrupted trace example - hash mismatch in multiple fields indicating data corruption",
+    "use_case": "Demonstrate detection of data corruption or accidental modification",
+    "expected_result": "NOT_VERIFIED",
+    "corruption_note": "Multiple trace entries have invalid hash computations"
+  },
+  "rules": {
+    "check_hash_integrity": true,
+    "check_model_consistency": false,
+    "check_prompts_unchanged": true
+  },
+  "traces": [
+    {
+      "id": "trace-001",
+      "timestamp": "2026-08-30T12:00:00Z",
+      "model": "deepseek-r1:32b",
+      "prompt_sent": "Summarize the plot of Pride and Prejudice.",
+      "output_received": "Pride and Prejudice follows Elizabeth Bennet as she navigates issues of manners, morality, education, and marriage in Georgian England.",
+      "input_hash": "sha256:CORRUPTED_HASH_INVALID_FOR_TESTING",
+      "output_hash": "sha256:a1b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2"
+    },
+    {
+      "id": "trace-002",
+      "timestamp": "2026-08-30T12:01:00Z",
+      "model": "deepseek-r1:32b",
+      "prompt_sent": "What is the main theme of 1984?",
+      "output_received": "The main themes include totalitarianism, surveillance, and loss of individuality.",
+      "input_hash": "sha256:b2c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3",
+      "output_hash": "sha256:ANOTHER_CORRUPT_HASH_FOR_DEMONSTRATION"
+    },
+    {
+      "id": "trace-003",
+      "timestamp": "2026-08-30T12:02:00Z",
+      "model": "deepseek-r1:32b",
+      "prompt_sent": "List the three laws of thermodynamics.",
+      "output_received": "Energy cannot be created or destroyed, entropy increases over time, absolute zero is unattainable.",
+      "input_hash": "sha256:c3d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4",
+      "output_hash": "sha256:d4e5f6g7h8i9j0k1l2m3n4o5p6q7r8s9t0u1v2w3x4y5z6a7b8c9d0e1f2g3h4i5"
+    }
+  ]
+}

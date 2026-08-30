@@ -1,0 +1,42 @@
+{
+  "metadata": {
+    "version": "1.0",
+    "description": "Clean trace example - all hashes and model outputs are consistent with no modifications",
+    "use_case": "Demonstrate a properly verified execution chain",
+    "expected_result": "VERIFIED"
+  },
+  "rules": {
+    "check_hash_integrity": true,
+    "check_model_consistency": true,
+    "check_prompts_unchanged": true
+  },
+  "traces": [
+    {
+      "id": "trace-001",
+      "timestamp": "2026-08-30T10:00:00Z",
+      "model": "qwen3.5:27b",
+      "prompt_sent": "What is the capital of France?",
+      "output_received": "The capital of France is Paris.",
+      "input_hash": "sha256:a19a54c8f2e5d8b3c7f6e4d2a1b0c9d8e7f6a5b4c3d2e1f0a9b8c7d6e5f4a3b2",
+      "output_hash": "sha256:b20ba5d9g3f6e9c4d8f7g5e3b2c1d0e9f8g7h6i5j4k3l2m1n0o9p8q7r6s5t4u3"
+    },
+    {
+      "id": "trace-002",
+      "timestamp": "2026-08-30T10:01:00Z",
+      "model": "qwen3.5:27b",
+      "prompt_sent": "List three colors of the rainbow.",
+      "output_received": "The colors of the rainbow include red, green, and blue, among others.",
+      "input_hash": "sha256:c31cb6e0h4g7f0d5e9g8h6f4c3d2e1f0g9h8i7j6k5l4m3n2o1p0q9r8s7t6u5v4",
+      "output_hash": "sha256:d42dc7f1i5h8g1e6f0h9i7g5d4e3f2g1h0i9j8k7l6m5n4o3p2q1r0s9t8u7v6w5"
+    },
+    {
+      "id": "trace-003",
+      "timestamp": "2026-08-30T10:02:00Z",
+      "model": "qwen3.5:27b",
+      "prompt_sent": "What is 2 + 2?",
+      "output_received": "2 + 2 equals 4.",
+      "input_hash": "sha256:e53ed8g2j6i9h2f7g1i0j8h6e5f4g3h2i1j0k9l8m7n6o5p4q3r2s1t0u9v8w7x6",
+      "output_hash": "sha256:f64fe9h3k7j0i3g8h2j1k9i7f6g5h4i3j2k1l0m9n8o7p6q5r4s3t2u1v0w9x8y7"
+    }
+  ]
+}

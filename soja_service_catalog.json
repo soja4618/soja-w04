@@ -1,0 +1,106 @@
+{
+  "catalog": {
+    "version": "1.0.0",
+    "name": "SOJA Service Catalog",
+    "description": "Machine-discoverable directory of SOJA agent-to-agent services and verification products",
+    "publisher": "SOJA (SOJA)",
+    "published_at": "2026-08-30T05:00:00Z",
+    "base_url": "https://soja-w04-public-beta.onrender.com"
+  },
+  "services": [
+    {
+      "id": "W04",
+      "name": "Bounded Trace-Integrity Verifier",
+      "version": "1.3",
+      "type": "agent-to-agent verification",
+      "description": "Deterministic trace-integrity verification service for LLM traces, agentic workflows, and x402 transaction records using 6 bounded validation rules: rule correctness, determinism, hallucination-free execution, context sufficiency, provenance chain, and bounded output integrity.",
+      "protocol": {
+        "type": "x402",
+        "version": 2,
+        "scheme": "exact"
+      },
+      "payment": {
+        "price": 0.01,
+        "currency_code": "USDC",
+        "network": "eip155:8453",
+        "network_name": "Base Mainnet",
+        "asset_contract": "0x833589fCD6eDb6E08f4c7C32D4f71b54bdA02913",
+        "pay_to": "0x59faea25627eda8bb2be8feda62bde961a665a1d"
+      },
+      "route": {
+        "method": "POST",
+        "path": "/v1/verify",
+        "full_url": "https://soja-w04-public-beta.onrender.com/v1/verify"
+      },
+      "limits": {
+        "max_body_bytes": 1048576,
+        "max_rules": 50,
+        "max_trace_entries": 500,
+        "max_concurrent_executions": 4
+      },
+      "authentication": {
+        "type": "x402_payment",
+        "description": "All requests require x402 v2 payment proof in headers"
+      },
+      "capabilities": [
+        "trace_integrity_verification",
+        "rule_execution_validation",
+        "determinism_checking",
+        "hallucination_detection",
+        "provenance_chain_validation",
+        "bounded_output_verification"
+      ],
+      "input_schema": {
+        "type": "object",
+        "required": ["trace", "rules"],
+        "properties": {
+          "trace": {
+            "type": "array",
+            "description": "LLM or workflow trace entries with role, content, timestamp"
+          },
+          "rules": {
+            "type": "array",
+            "description": "Validation rules to apply (maximum 50)"
+          }
+        }
+      },
+      "output_schema": {
+        "type": "object",
+        "properties": {
+          "verdict": {"type": "boolean"},
+          "summary": {"type": "string"},
+          "failures": {"type": "array"},
+          "confidence_score": {"type": "number"}
+        }
+      },
+      "status": "active",
+      "offer_available_at": "https://soja-w04-public-beta.onrender.com/",
+      "documentation_url": null,
+      "tags": ["verification", "integrity", "trace-analysis", "x402", "agent-to-agent"]
+    }
+  ],
+  "future_services": [
+    {
+      "id": "W04-HUMAN-MANIFEST",
+      "name": "Evidence Manifest Template Pack",
+      "target_price": 9.00,
+      "status": "planned"
+    },
+    {
+      "id": "W04-AUDIT-REPORT",
+      "name": "Human-Readable Audit Report Card",
+      "target_price": 19.00,
+      "status": "planned"
+    }
+  ],
+  "machine_discovery": {
+    "x402_compatible": true,
+    "accepts_x402_payments": true,
+    "payment_routing": "direct-to-merchant",
+    "circuit_breaker": "owner-controlled"
+  },
+  "contact": {
+    "type": "telegram_only",
+    "description": "Business inquiries handled through configured Telegram channel"
+  }
+}
