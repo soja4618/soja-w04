@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>W04 x402-list.com Submission</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 800px; margin: 40px auto; padding: 20px; line-height: 1.6; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; font-weight: bold; margin-bottom: 5px; }
+        input, textarea, select { width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 4px; box-sizing: border-box; }
+        button { background: #2563eb; color: white; padding: 12px 24px; border: none; border-radius: 4px; cursor: pointer; font-size: 16px; }
+        button:hover { background: #1d4ed8; }
+        .info { background: #f3f4f6; padding: 15px; border-radius: 4px; margin-bottom: 20px; }
+        .ready { background: #d1fae5; color: #065f46; }
+    </style>
+</head>
+<body>
+    <h1>Submit W04 to x402-list.com Directory</h1>
+    
+    <div class="info ready">
+        <p><strong>Status:</strong> ✅ All data pre-filled | <strong>Cost:</strong> $0 (free for compute/hosted services) | <strong>Action needed:</strong> Enter email below, click Submit</p>
+        <p><small>Directory stats: 575 services listed, $199K USDC settlement volume (30 days), 87.6% avg uptime</small></p>
+    </div>
+
+    <form id="submissionForm" action="https://x402-list.com/" method="get">
+        <input type="hidden" name="type" value="service">
+        
+        <div class="form-group">
+            <label for="email">Contact Email (REQUIRED - Owner Input):</label>
+            <input type="email" id="email" name="email" required placeholder="owner@soja.dev or similar">
+            <small>This email will be visible on the public directory listing.</small>
+        </div>
+
+        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+        <h3>Pre-filled Service Data (Verified from W04 live endpoint)</h3>
+
+        <div class="form-group">
+            <label for="service_name">Service Name:</label>
+            <input type="text" id="service_name" value="SOJA W04 — Bounded Trace-Integrity Verifier" readonly style="background: #f9fafb;">
+        </div>
+
+        <div class="form-group">
+            <label for="service_url">Service URL:</label>
+            <input type="url" id="service_url" value="https://soja-w04-public-beta.onrender.com" readonly style="background: #f9fafb;">
+        </div>
+
+        <div class="form-group">
+            <label for="website_url">Website URL:</label>
+            <input type="url" id="website_url" value="https://soja-w04-public-beta.onrender.com" readonly style="background: #f9fafb;">
+        </div>
+
+        <div class="form-group">
+            <label for="category">Category:</label>
+            <input type="text" id="category" value="Verification" readonly style="background: #f9fafb;">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description (pre-filled):</label>
+            <textarea id="description" rows="4" readonly style="background: #f9fafb;">x402 v2 exact trace-integrity verifier for AI agents. Validate bounded execution traces with deterministic rule engines. Machine-native service designed for autonomous agent-to-agent commerce. Base mainnet, $0.01 USDC per invocation. Free health check and offer profile at service root. No human intervention required for discovery or validation.</textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="endpoints">Endpoint Paths:</label>
+            <input type="text" id="endpoints" value="/health /v1/verify" readonly style="background: #f9fafb;">
+        </div>
+
+        <div class="form-group">
+            <label for="network">Network:</label>
+            <input type="text" id="network" value="eip155:8453 (Base mainnet)" readonly style="background: #f9fafb;">
+        </div>
+
+        <div class="form-group">
+            <label for="price">Price:</label>
+            <input type="text" id="price" value="$0.01 USDC per invocation" readonly style="background: #f9fafb;">
+        </div>
+
+        <hr style="margin: 20px 0; border: none; border-top: 1px solid #ddd;">
+
+        <p><strong>Note:</strong> This form is a reference. Actual submission requires direct interaction with x402-list.com's web form. All data above has been verified against live W04 endpoint.</p>
+        
+        <p><a href="https://x402-list.com/" target="_blank"><button type="button" onclick="window.open('https://x402-list.com/', '_blank')">Go to x402-list.com Submit Page</button></a></p>
+    </form>
+
+    <h3 style="margin-top: 30px;">Submission Process (Once Email Provided):</h3>
+    <ol>
+        <li>Navigate to <a href="https://x402-list.com/">x402-list.com</a></
+        </li>
+        <li>Click "Submit Yours" / "Add Service"</li>
+        <li>Fill form with pre-validated data above</li>
+        <li>Enter owner email contact</li>
+        <li>Submit - directory will auto-probe endpoints and review before publishing</li>
+    </ol>
+
+    <h3 style="margin-top: 30px;">Owner Decision Request:</h3>
+    <p><strong>Status:</strong> Form data 100% ready. Need owner to provide ONE email address for public directory listing.</p>
+    <p><em>This is the fastest zero-cost distribution action available per 2026-08-30 commercial intelligence report.</em></p>
+</body>
+</html>
