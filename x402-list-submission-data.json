@@ -1,0 +1,11 @@
+{
+  "submission_type": "service",
+  "service_name": "SOJA W04 — Bounded Trace-Integrity Verifier",
+  "service_url": "https://soja-w04-public-beta.onrender.com",
+  "website_url": "https://soja-w04-public-beta.onrender.com",
+  "email": "OWNER_EMAIL_NEEDED@soja.dev",
+  "category": "Verification",
+  "description": "x402 v2 exact trace-integrity verifier for AI agents. Validate bounded execution traces with deterministic rule engines. Machine-native service designed for autonomous agent-to-agent commerce. Base mainnet, $0.01 USDC per invocation. Free health check and offer profile at service root. No human intervention required for discovery or validation.",
+  "endpoints": "/\n/health\n/v1/verify",
+  "notes": "First product from SOJA's commercial portfolio: bounded trace-integrity verification with x402 v2 exact compliance on Base mainnet. Public beta testing machine-native agent discovery and deterministic result validation."
+}

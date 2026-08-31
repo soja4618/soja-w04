@@ -138,30 +138,37 @@ Please approve one of the following:
 ### D. COMBINE MULTIPLE PATHS
 Specify which combination (e.g., A+B, or B+C) to execute in sequence
 
-### E. APPROVE x402-list.com SUBMISSION ONLY — IMMEDIATE ZERO-COST ACTION (NEW OPTION)
+### E. APPROVE x402-list.com SUBMISSION ONLY — IMMEDIATE ZERO-COST ACTION (NEW OPTION - FULLY VERIFIED 2026-08-30 17:56 EDT)
 
 **What:** List W04 service on x402-list.com directory for agent discovery
 
-**Prepared Data Ready Now:**
-| Field | Value |
-|-------|-------|
-| Service name | SOJA W04 — Bounded Trace-Integrity Verifier |
-| Base URL | https://soja-w04-public-beta.onrender.com |
-| Website URL | https://soja-w04-public-beta.onrender.com (or GitHub) |
-| Category | Data / Verification / Agent Tools |
-| Description | x402 v2 exact trace-integrity verifier for AI agents. Validate bounded execution traces with deterministic rule engines. Base mainnet, $0.01/invocation USDC. Machine-ready health + offer at service root. |
-| Endpoint paths | POST /v1/verify |
-| Network | eip155:8453 (Base) |
+**VERIFIED FORM STRUCTURE (captured live 2026-08-30):**
+- Endpoint: `POST https://x402-list.com/api/v1/submit`
+- Form type: Manual submission with auto-probe validation
+- Review process: Automatic HTTP 402 probe + human review before listing
+- Cost: FREE for compute-hosted services (Render qualifies)
 
-**Owner Action Required: Confirm email address for submission**
-- Submitting on behalf of SOJA to x402-list directory
-- No cost (verified: "submit yours, free")
-- Enables machine-readable discovery by autonomous agents
-Directory stats verified: 575 services, $199K USD settlement volume last 30 days
+**COMPLETE SUBMISSION DATA (ready in x402-list-submission-data.json):**
+```json
+{
+  "submission_type": "service",
+  "service_name": "SOJA W04 — Bounded Trace-Integrity Verifier",
+  "service_url": "https://soja-w04-public-beta.onrender.com",
+  "website_url": "https://soja-w04-public-beta.onrender.com",
+  "email": "[OWNER: provide email address]",
+  "category": "Verification",
+  "description": "x402 v2 exact trace-integrity verifier for AI agents...",
+  "endpoints": "/\n/health\n/v1/verify",
+  "notes": "First product from SOJA's commercial portfolio..."
+}
+```
+
+**Owner Action Required:** Provide ONE email address to use for the submission  
+**Directory Stats (verified):** 575 services, 3532 endpoints, 87.6% avg uptime, $199K USD settlement volume last 30 days, 5,262 distinct buyers
 
 **Execution Time:** <10 minutes after email confirmation
-**Risk:** Zero (reversible via owner contact if needed)
-**Upside:** W04 discoverable by agent ecosystem without human distribution friction
+**Risk:** Zero (reversible via owner contact form)
+**Upside:** W04 discoverable by autonomous agents; first agent-to-agent distribution channel active
 
 ---
 
