@@ -1,0 +1,109 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Evidence Manifest Template Pack — SOJA Commercial</title>
+  <style>
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; max-width: 720px; margin: 64px auto; padding: 0 24px; line-height: 1.6; color: #222; background: #fafafa; }
+    h1 { margin-bottom: 8px; color: #111; font-size: 2em; }
+    .subtitle { margin-top: 0; margin-bottom: 32px; color: #555; font-size: 1.1em; }
+    .price-badge { display: inline-block; background: #16a34a; color: white; padding: 8px 16px; border-radius: 6px; font-weight: bold; font-size: 1.2em; margin-bottom: 24px; }
+    section { background: white; border: 1px solid #ddd; border-radius: 8px; padding: 24px; margin-bottom: 20px; }
+    h2 { margin-top: 0; font-size: 1.25em; color: #111; border-bottom: 1px solid #eee; padding-bottom: 12px; }
+    .feature-list { margin: 0; padding-left: 20px; }
+    .feature-list li { margin-bottom: 8px; }
+    code { background: #f4f4f4; border-radius: 3px; padding: 2px 6px; font-size: 0.9em; }
+    .cta-button { display: inline-block; background: #111; color: white; padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: bold; font-size: 1.1em; margin-top: 16px; }
+    .cta-button:hover { background: #333; }
+    footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #ddd; color: #777; font-size: 0.9em; text-align: center; }
+  </style>
+</head>
+<body>
+
+<h1>Evidence Manifest Template Pack</h1>
+<p class="subtitle">Ready-to-use JSON test manifests for verification workflows — $19 one-time, instant delivery.</p>
+<div><span class="price-badge">$19.00 one-time</span></div>
+
+<section>
+  <h2>What's Inside</h2>
+  <p>A complete set of 5 pre-built JSON manifest templates covering all verification test scenarios:</p>
+  <ul class="feature-list">
+    <li><code>clean_manifest.json</code> — Valid trace with matching rules (expected PASS)</li>
+    <li><code>modified_rule_manifest.json</code> — Trace violates declared rules (expected FAIL)</li>
+    <li><code>corrupted_structure_manifest.json</code> — Malformed manifest, missing required fields (ERROR)</li>
+    <li><code>multiple_divergence_manifest.json</code> — Complex case with multiple rule violations</li>
+    <li><code>empty_manifest.json</code> — Boundary case with empty arrays</li>
+  </ul>
+  <p><strong>Plus:</strong> Full README documentation (~6.7KB) with usage instructions and expected results for every test case.</p>
+</section>
+
+<section>
+  <h2>Why This Saves You Time</h2>
+  <ul class="feature-list">
+    <li><strong>No boilerplate:</strong> Don't write manifests from scratch — use tested templates</li>
+    <li><strong>Cover edge cases:</strong> Pre-built examples for pass/fail/error scenarios you might miss</li>
+    <li><strong>Machine-ready:</strong> All valid JSON, ready to POST to any verification endpoint</li>
+    <li><strong>Well-documented:</strong> Each manifest explained with expected behavior</li>
+  </ul>
+</section>
+
+<section>
+  <h2>Delivery & Licensing</h2>
+  <p><strong>Purchase once, use forever.</strong> No subscription. No recurring fees.</p>
+  <p><strong>What happens after you pay:</strong></p>
+  <ol>
+    <li>Complete payment via Stripe ($19 one-time)</li>
+    <li>Receive instant email with download link</li>
+    <li>Download ZIP file (~20KB) with all templates + documentation</li>
+    <li>Use in your own projects, unlimited times, no attribution required</li>
+  </ol>
+  <a href="https://buy.stripe.com/bJe5kE0iufDadzB1pK4F201" target="_blank" rel="noopener" class="cta-button">Buy Now ($19)</a>
+</section>
+
+<section>
+  <h2>Technical Details</h2>
+  <table style="width:100%;margin:16px 0;border-collapse:collapse">
+    <tr style="border-bottom:1px solid #eee">
+      <th style="text-align:left;padding:8px 0;color:#444;font-weight:600">Format</th>
+      <td style="padding:8px 0">JSON + README markdown</td>
+    </tr>
+    <tr style="border-bottom:1px solid #eee">
+      <th style="text-align:left;padding:8px 0;color:#444;font-weight:600">Total Size</th>
+      <td style="padding:8px 0">~20KB ZIP archive</td>
+    </tr>
+    <tr style="border-bottom:1px solid #eee">
+      <th style="text-align:left;padding:8px 0;color:#444;font-weight:600">License</th>
+      <td style="padding:8px 0">Single buyer, unlimited use</td>
+    </tr>
+    <tr>
+      <th style="text-align:left;padding:8px 0;color:#444;font-weight:600">Target Users</th>
+      <td style="padding:8px 0">Developers, QA engineers, agent operators</td>
+    </tr>
+  </table>
+  
+  <h3 style="margin-top:24px;margin-bottom:12px;font-size:1.1em;color:#111">Try Before You Buy — Free Sample</h3>
+  <p style="color:#555;margin-bottom:12px">Download a sample manifest to see the format:</p>
+  <code style="display:block;background:#f4f4f4;padding:16px;border-radius:6px;margin:12px 0;font-size:0.85em;overflow-x:auto">
+<span style="color:#000">{"</span><span style="color:#d63384">"manifest"</span>: {<br>
+&nbsp;&nbsp;<span style="color:#d63384">"metadata"</span>: {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#d63384">"name"</span>: <span style="color:#05a">"Sample Trace Verification"</span>,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;<span style="color:#d63384">"description"</span>: <span style="color:#05a">"Simple pass/fail test case"</span><br>
+&nbsp;&nbsp;},<br>
+&nbsp;&nbsp;<span style="color:#d63384">"rules"</span>: [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<span style="color:#d63384">"type"</span>: <span style="color:#05a">"step"</span>, <span style="color:#d63384">"index"</span>: 0, <span style="color:#d63384">"expected_output_contains"</span>: <span style="color:#05a">"hello"</span>}<br>
+&nbsp;&nbsp;],<br>
+&nbsp;&nbsp;<span style="color:#d63384">"trace"</span>: [<br>
+&nbsp;&nbsp;&nbsp;&nbsp;{<span style="color:#d63384">"index"</span>: 0, <span style="color:#d63384">"output"</span>: <span style="color:#05a">"say hello there"</span>}<br>
+&nbsp;&nbsp;]<br>
+}}</code>
+</section>
+
+<footer>
+<p><strong>SOJA Commercial — Standalone Digital Products</strong></p>
+<p>© 2026 SOJA. All rights reserved. | Evidence Manifest Template Pack v1.0</p>
+<p style="font-size:0.85em;color:#999;margin-top:8px">This is a standalone digital product template pack. No external service or API required to use these manifests in your own workflows.</p>
+</footer>
+
+</body>
+</html>
