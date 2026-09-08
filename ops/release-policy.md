@@ -23,11 +23,16 @@ The historical checkout at `/Users/soja/SOJA/COMMERCIAL` is not a release worksp
 - Push non-public operational files and test configuration when they do not alter the published directory or commercial configuration.
 - Observe the resulting GitHub and Netlify status and roll forward with a corrective non-content commit when a purely technical regression is detected.
 
-## Named approval still required
+## Standing commercial authority
 
-- Any change inside `STOREFRONT_EVIDENCE_MANIFEST` that changes visible public copy, claims, design, price presentation, CTA destination, tracking, or downloaded assets.
-- Any change to the $19 price, Gumroad product, checkout/fulfillment path, payment destination, payout, tax, account ownership, permissions, or security settings.
-- Force pushes, history rewriting, branch deletion, repository visibility changes, or destructive rollbacks.
+- Truthful public copy, claims, design, price/package experiments, tracking, and named product assets may be changed as bounded commercial experiments after the required gate below, with rollback material and measurement.
+- Ordinary commits may be pushed from the clean local `soja-release` branch to production with `git push origin HEAD:main` after fetching and confirming it remains a fast-forward of `origin/main`.
+
+## Owner-reserved actions
+
+- Payment destinations, payouts, tax, account ownership, permissions, security/recovery settings, secrets, credentials, customer personal information, spending, and contracts.
+- Force pushes, history rewriting, branch deletion, repository visibility changes, or destructive irreversible rollbacks.
+- Any action-time confirmation required by the browser control layer remains mandatory even when the commercial scope has standing authority.
 
 ## Required gate before a production-affecting push
 
@@ -45,4 +50,3 @@ The historical checkout at `/Users/soja/SOJA/COMMERCIAL` is not a release worksp
 ## Rollback
 
 Do not delete history or force reset. Revert the specific bad commit with a new commit after confirming the target. Verify the restored production state independently.
-
