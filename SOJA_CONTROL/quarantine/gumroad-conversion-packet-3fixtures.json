@@ -1,0 +1,116 @@
+{
+  "product_name": "Evidence Manifest Template Pack",
+  "price_usd": 19,
+  "description_intro": "Stop guessing whether your AI tools actually work. This pack gives you real-world JSON test cases to verify agent behavior, edge-case handling, and deterministic output in production conditions.",
+  "target_buyer": "Technical product owners, integration leads, and independent builders who deploy autonomous agents or AI workflows and need reliable evidence of behavior before shipping.",
+  "core_outcome": "You gain immediate verification capability for your automation stack: paste one fixture into your flow, run it, compare output, and know whether edge cases are handled correctly before they reach production users.",
+  "what_is_inside": {
+    "included_fixtures_count": 3,
+    "fixtures": [
+      {
+        "name": "clean.json",
+        "description": "Well-formed input with all standard fields present. Validates baseline operation when requirements are met."
+      },
+      {
+        "name": "mismatch.json",
+        "description": "Intentionally incomplete or structurally inconsistent data. Tests whether your system detects and handles missing traces correctly."
+      },
+      {
+        "name": "malformed.json",
+        "description": "Invalid structure that breaks naive parsers. Confirms robustness against malformed inputs."
+      }
+    ],
+    "documentation": "Usage notes explain how to run each test, what output represents success, and how to interpret discrepancies.",
+    "format": "ZIP file containing 3 JSON fixtures + README with usage instructions"
+  },
+  "claims_truthfulness_notice": {
+    "statement": "This product currently delivers exactly three verified fixtures. Two additional fixture concepts exist in development but are NOT part of the current gated Gumroad delivery and must not be advertised as buyer-delivered until they pass QA and the live fulfill file is intentionally updated.",
+    "live_fulfill_source": "Gumroad gated delivery ZIP (not unconditional Render or Stripe checkout)",
+    "price_point": "$19 USD fixed at time of creation"
+  },
+  "gumroad_profile_copy": {
+    "profile_name": "SOJA",
+    "tagline": "Evidence-led digital products for autonomous systems. Real-world test fixtures, verified workflows, and no fluff.",
+    "bio": "I build tools that help technical builders verify their AI and automation stacks under production conditions. Every product delivers tangible evidence: run a test, see the result, know what works and what doesn't.\n\nWhat you get:\n- Real-world JSON fixtures from actual edge cases encountered in autonomous agent testing (clean operation, missing traces, malformed inputs)\n- Usage instructions that fit into your existing validation workflows\n- Updates when additional verified fixtures are added\n\nNo promises. Just working materials you can run immediately.",
+    "handle": "@sojaflare"
+  },
+  "gumroad_product_copy": {
+    "title": "Evidence Manifest Template Pack",
+    "body": "Ship AI tools with confidence.\n\nEvery autonomous agent and automation workflow needs proof it handles real edge cases—the ones you discover after hours of debugging, not the happy-path examples in documentation.\n\nThis pack delivers three battle-tested JSON fixtures that let you verify your stack's behavior under actual production conditions:\n\n1. **clean.json** — Well-formed input with all required fields present. Validates baseline operation when requirements are met.\n2. **mismatch.json** — Intentionally incomplete or structurally inconsistent data. Tests whether your system detects and handles missing traces correctly.\n3. **malformed.json** — Invalid structure that breaks naive parsers. Confirms robustness against malformed inputs.\n\n+ README with usage notes explaining how to run each test, what output represents success, and how to interpret discrepancies.\n\nFormat: ZIP file containing 3 JSON fixtures + documentation (gated via Gumroad checkout)\nPrice: $19 USD one-time payment\nDelivery: Immediate download after purchase\nRefunds: Per Gumroad's standard policy\n\nWho this is for:\n- Integration leads deploying autonomous agents to production\n- Product owners who need evidence before shipping AI features\n- Independent builders running verification pipelines without fluff or bloat\n\nWhat you'll have after using this:\n- Confidence your system handles real edge cases correctly\n- A reproducible test workflow you can add to CI/CD or manual validation gates\n- Less time debugging production failures caused by missing trace handling\n\nNo fluff. No promises. Just verified materials you can run immediately.",
+    "price_cents": 1900,
+    "currency": "usd",
+    "tags": ["ai", "automation", "testing", "fixtures", "json", "validation", "edge-cases"]
+  },
+  "visual_specification": {
+    "product_thumbnail": {
+      "dimensions_px": "1200x675",
+      "style": "Clean technical aesthetic. Dark background (#0d1117 or similar). Centered terminal-like window showing a JSON code snippet with syntax highlighting (structure hint: key-value pairs, arrays visible). Green success indicators or checkmark for positive signal. Product name as overlay text in monospace font.\n\nKey visual cues:\n- Terminal/code theme (dark mode)\n- Snippet of valid JSON structure (not full content)\n- Professional, engineering-focused aesthetic\n- No stock photos, no abstract gradients, no cartoon illustrations"
+    },
+    "profile_avatar": {
+      "dimensions_px": "400x400 min",
+      "style": "Simple geometric logo or typography-based mark. S suggests SOJA or a minimal technical symbol (checkmark in circle, terminal prompt, code bracket). High contrast, professional, memorable at small sizes.\n\nRecommended: Solid color background with contrasting monochrome symbol text.\nColor palette options:\n- Dark teal/slate on white\n- Electric lime on dark gray\n- Deep purple on light"
+    }
+  },
+  "verification_checklist": {
+    "before_publishing_copy": [
+      "Copy states exactly three fixtures (not five)",
+      "Price is $19 USD",
+      "Delivery method: Gumroad gated ZIP download",
+      "\"Five-fixture\", \"v2 candidate\", or similar terms are excluded from buyer-facing copy\"",
+      "No invented testimonials, customer claims, revenue fabrications, or false scarcity"
+    ],
+    "after_publishing": [
+      "Visit Gumroad product page as anonymous user",
+      "Verify price shows $19 USD",
+      "Confirm all three fixtures (clean, mismatch, malformed) are named exactly as in deliver ZIP",
+      "Purchase CTA works and routes to checkout",
+      "Product description matches the gated fulfillment file contents",
+      "Profile copy, avatar, and thumbnail display correctly",
+      "Record baseline metrics: product visits, views-to-checkout rate (Gumroad dashboard)"
+    ]
+  },
+  "browser_action_queue_entries": [
+    {
+      "priority": 1,
+      "action_description": "Update Gumroad seller profile (sojaflare) with new avatar image, bio copy, and handle. Verify public view shows changes.",
+      "exact_copy_to_insert": {
+        "name": "SOJA",
+        "tagline": "Evidence-led digital products for autonomous systems. Real-world test fixtures, verified workflows, and no fluff.",
+        "bio_full_text": "I build tools that help technical builders verify their AI and automation stacks under production conditions. Every product delivers tangible evidence: run a test, see the result, know what works and what doesn't.\n\nWhat you get:\n- Real-world JSON fixtures from actual edge cases encountered in autonomous agent testing (clean operation, missing traces, malformed inputs)\n- Usage instructions that fit into your existing validation workflows\n- Updates when additional verified fixtures are added\n\nNo promises. Just working materials you can run immediately.",
+        "handle": "@sojaflare"
+      },
+      "files_to_upload": [
+        "/Users/soja/Documents/Codex/SOJA_RELEASE/evidence-manifest-storefront/assets/profile-avatar.png (to be created based on visual_specification.profile_avatar)"
+      ],
+      "verification_step": "Visit https://gwah.sojaflare.gumroad.com to confirm public view"
+    },
+    {
+      "priority": 2,
+      "action_description": "Update Gumroad product 'Evidence Manifest Template Pack': update title, body copy, thumbnail image, and confirm price is $19 USD. Verify the gated download file contains exactly three fixtures matching copy",
+      "exact_copy_to_insert": {
+        "title": "Evidence Manifest Template Pack",
+        "body_markdown": "[as provided in gumroad_product_copy.body]",
+        "price_usd": 19
+      },
+      "files_to_upload": [
+        "/Users/soja/Documents/Codex/SOJA_RELEASE/evidence-manifest-storefront/assets/product-thumbnail.png (to be created based on visual_specification.product_thumbnail)",
+        "Update fulfillment ZIP to current three-fixture version if not already"
+      ],
+      "verification_step": "Visit https://sojaflare.gumroad.com/l/ovhmq as anonymous user and verify copy, price, CTA. Optionally inspect delivered ZIP after any test purchase."
+    }
+  ],
+  "measurement_plan": {
+    "baselines_to_record": [
+      "Current product visits (last 30 days)",
+      "Checkout starts rate",
+      "Purchase conversion rate",
+      "Gross revenue"
+    ],
+    "post_change_monitoring": {
+      "observation_window_days": 14,
+      "metrics": ["product_visits", "views_to_checkout_conversion", "checkout_to_purchase_conversion", "revenue"],
+      "success_indicator": "Any increase in views-to-checkout conversion while maintaining or increasing purchase rate; zero false claims detected"
+    }
+  },
+  "next_action_after_profile_product_update": "Begin validation of private five-fixture v2 candidate: define expected outputs against actual verifier/schemas, test all five fixtures, build clean gated-delivery ZIP, and update Gumroad only after artifact and claim match exactly."
+}
