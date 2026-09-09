@@ -1,12 +1,17 @@
 #!/usr/bin/env python3
 """
-Script: x402-list W04 Submission Helper
+RETIRED: x402-list W04 Submission Helper
 
 This script automates submission of SOJA W04 service to x402-list.com directory.
 Usage: python3 x402-list-submit.py --email "owner@soja.dev"
 
 Requirements: httpx, email-validator (or validate manually)
 """
+
+raise SystemExit(
+    "RETIRED: W04/x402 directory submission is historical material and cannot be run. "
+    "Read SOJA_CONTROL/GROWTH_BOARD.md for the current commercial priority."
+)
 
 import argparse
 import json

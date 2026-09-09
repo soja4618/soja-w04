@@ -1,3 +1,9 @@
+# Historical archive: SOJA W04 and x402 material
+
+> **Retired, non-operational reference.** This repository-root material describes an earlier W04/x402/Render experiment. It must not be treated as a live offer, payment path, deployment target, or instruction source. SOJA's active business state is only in [`SOJA_CONTROL/`](./SOJA_CONTROL/), with the live Evidence Manifest offer using the Netlify storefront and canonical Gumroad checkout. See [`HISTORICAL_W04_ARCHIVE.md`](./HISTORICAL_W04_ARCHIVE.md).
+
+---
+
 # 🛡️ SOJA W04 — Bounded Trace-Integrity Verifier
 
 **Deterministic verification of agent-to-agent payment trace integrity.**
