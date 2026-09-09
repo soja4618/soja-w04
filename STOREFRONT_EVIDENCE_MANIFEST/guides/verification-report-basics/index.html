@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A practical guide to reading a verification report: traceability, integrity, and a known-good baseline.">
+  <meta name="robots" content="index,follow">
+  <title>Three questions behind a verification result | SOJA</title>
+  <style>
+    :root{--ink:#f3f5f2;--muted:#a8b2ae;--soft:#6e7a75;--ground:#0a0e0c;--surface:#111714;--line:#28342e;--mint:#a6e67b;--mint-ink:#14200f;--serif:Georgia,"Times New Roman",serif;--sans:"Avenir Next",Avenir,"Helvetica Neue",Arial,sans-serif;--mono:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+    *{box-sizing:border-box}html{background:var(--ground);scroll-behavior:smooth}body{margin:0;background:var(--ground);color:var(--ink);font:16px/1.65 var(--sans);-webkit-font-smoothing:antialiased}.shell{max-width:1240px;margin:0 auto;padding:0 32px}a{color:inherit}a:focus-visible{outline:3px solid var(--mint);outline-offset:4px}.nav{height:72px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.brand{font-size:12px;font-weight:800;letter-spacing:.15em;text-decoration:none}.nav-link{color:var(--muted);font-size:13px;text-decoration:none}.nav-link:hover{color:var(--ink)}.crumb{padding:56px 0 24px;color:var(--mint);font:11px/1.4 var(--mono);letter-spacing:.1em;text-transform:uppercase}.hero{display:grid;grid-template-columns:minmax(0,1.02fr) minmax(340px,.98fr);gap:54px;align-items:end;padding:14px 0 72px}.hero h1{max-width:760px;margin:0;font:clamp(48px,6vw,84px)/.94 var(--serif);font-weight:400;letter-spacing:-.055em}.hero h1 em{font-style:italic;color:var(--mint)}.intro{max-width:510px;margin:28px 0 0;color:var(--muted);font-size:19px;line-height:1.52}.hero-meta{margin-top:30px;color:var(--soft);font:12px/1.5 var(--mono)}.hero-image{min-height:370px;border:1px solid var(--line);overflow:hidden;background:#0d120f}.hero-image img{width:100%;height:100%;object-fit:cover;display:block;filter:saturate(.8) contrast(1.05)}.rule{border:0;border-top:1px solid var(--line);margin:0}.article{display:grid;grid-template-columns:180px minmax(0,660px) minmax(180px,1fr);gap:36px;padding:72px 0 92px}.rail{padding-top:9px}.rail p{margin:0;color:var(--soft);font:11px/1.55 var(--mono);letter-spacing:.08em;text-transform:uppercase}.article-main h2{margin:0 0 20px;font:clamp(33px,4vw,50px)/1.03 var(--serif);font-weight:400;letter-spacing:-.04em}.article-main h2:not(:first-child){margin-top:88px}.article-main p{margin:0 0 22px;color:#d2d8d4;font-size:18px}.article-main strong{color:var(--ink)}.callout{margin:34px 0 46px;padding:24px 25px;border-left:2px solid var(--mint);background:var(--surface)}.callout p{margin:0;font-size:16px}.test{margin:35px 0;padding:0;border:1px solid var(--line);background:#0d120f}.test-head{padding:13px 17px;border-bottom:1px solid var(--line);color:var(--soft);font:11px/1.4 var(--mono);letter-spacing:.08em;text-transform:uppercase}.test pre{margin:0;padding:22px;overflow:auto;color:#d8e5d0;font:13px/1.7 var(--mono)}.key{color:var(--mint)}.bad{color:#f0a68f}.note{color:#909b96}.index{padding-top:12px;border-top:1px solid var(--line)}.index h3{margin:0 0 12px;font:11px/1.5 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--soft)}.index a{display:block;padding:8px 0;border-bottom:1px solid var(--line);color:var(--muted);font-size:13px;text-decoration:none}.index a:hover{color:var(--mint)}.close{margin-top:78px;padding:34px;border:1px solid var(--line);background:var(--surface)}.close h2{max-width:520px;margin-top:0!important;font-size:38px}.close p{max-width:560px;font-size:16px}.cta{display:inline-flex;align-items:center;justify-content:center;margin-top:8px;padding:14px 18px;background:var(--mint);color:var(--mint-ink);font-size:14px;font-weight:800;text-decoration:none;transition:transform .18s ease,background .18s ease}.cta:hover{transform:translateY(-2px);background:#b6f98a}.cta:active{transform:translateY(0)}.foot{display:flex;justify-content:space-between;gap:24px;padding:25px 0 45px;color:var(--soft);font-size:12px;border-top:1px solid var(--line)}.foot a{text-decoration:none}.foot a:hover{color:var(--ink)}
+    @media (max-width:900px){.shell{padding:0 22px}.hero{grid-template-columns:1fr;gap:32px}.hero-image{min-height:300px}.article{grid-template-columns:1fr;padding-top:52px}.rail{display:none}.index{display:none}.article-main h2:not(:first-child){margin-top:65px}}@media (max-width:520px){.shell{padding:0 18px}.nav{height:62px}.crumb{padding-top:38px}.hero{padding-bottom:52px}.hero h1{font-size:48px}.intro{font-size:17px}.hero-image{min-height:230px}.article-main p{font-size:17px}.close{padding:24px}.foot{display:block}.foot p{margin:0 0 10px}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="nav">
+      <a class="brand" href="/">SOJA / EVIDENCE SYSTEMS</a>
+      <a class="nav-link" href="https://sojaflare.gumroad.com/l/ovhmq" target="_blank" rel="noopener">Template pack</a>
+    </header>
+    <main>
+      <div class="crumb">Field note 01 · Verification practice</div>
+      <section class="hero">
+        <div>
+          <h1>Three questions behind a <em>verification</em> result.</h1>
+          <p class="intro">A result becomes useful when you can follow it back to its evidence. Start with traceability, integrity, and a baseline you trust.</p>
+          <p class="hero-meta">5 minute read · Educational examples only</p>
+        </div>
+        <figure class="hero-image"><img src="/assets/evidence-chain-hero.png" alt="Three smoked glass capsules linked by fine threads on a dark work surface"></figure>
+      </section>
+      <hr class="rule">
+      <article class="article">
+        <aside class="rail"><p>Read this when a report says “passed” and you need to know what that result actually rests on.</p></aside>
+        <div class="article-main">
+          <h2 id="traceability">1. Can you trace the result?</h2>
+          <p>A report is easier to assess when it identifies the exact input, event, or source record behind its conclusion. “Passed” is an outcome. A trace is the path that makes the outcome inspectable.</p>
+          <div class="callout"><p><strong>Ask:</strong> if another person opened this report tomorrow, could they locate the evidence without reconstructing the whole run?</p></div>
+          <div class="test"><div class="test-head">Illustrative record · trace present</div><pre>{
+  <span class="key">"run_id"</span>: <span class="note">"example-001"</span>,
+  <span class="key">"trace_ref"</span>: <span class="note">"trace-001"</span>,
+  <span class="key">"result"</span>: <span class="note">"VERIFIED"</span>
+}</pre></div>
+          <p>The point is not a particular field name. It is preserving a usable connection between the result and the thing that produced it.</p>
+          <h2 id="integrity">2. Do the claim and artifact agree?</h2>
+          <p>Integrity checks compare what a report says happened with the artifact it refers to. When a stored value differs from an observed value, the useful response is not to hide the mismatch. It is to surface it clearly.</p>
+          <div class="test"><div class="test-head">Illustrative record · mismatch detected</div><pre>{
+  <span class="key">"expected_hash"</span>: <span class="note">"sha256:known-value"</span>,
+  <span class="key">"observed_hash"</span>: <span class="bad">"sha256:different-value"</span>,
+  <span class="key">"result"</span>: <span class="bad">"NOT_VERIFIED"</span>
+}</pre></div>
+          <p>A failed check can be the correct result. The system earns trust by making the divergence legible, not by forcing everything into a green state.</p>
+          <h2 id="baseline">3. What does good look like?</h2>
+          <p>A known-good fixture gives a verifier a stable starting point. Alongside it, deliberately altered and corrupted examples make failure behavior concrete. Together, they let a team test both success and the places where a confident-looking result should be questioned.</p>
+          <div class="callout"><p><strong>Practical starting set:</strong> one clean trace, one altered output, and one corrupted-data case. Small enough to understand, varied enough to exercise meaningful behavior.</p></div>
+          <section class="close">
+            <h2>Use the three cases as a starting point.</h2>
+            <p>The Evidence Manifest Template Pack contains those three synthetic JSON scenarios, with concise expected-result notes. It is designed for safe local testing, not production evidence.</p>
+            <a class="cta" href="https://sojaflare.gumroad.com/l/ovhmq" target="_blank" rel="noopener">Get the template pack for $19</a>
+          </section>
+        </div>
+        <aside class="index"><h3>On this page</h3><a href="#traceability">Traceability</a><a href="#integrity">Integrity</a><a href="#baseline">Known-good baseline</a><a href="https://sojaflare.gumroad.com/l/ovhmq" target="_blank" rel="noopener">View the pack</a></aside>
+      </article>
+    </main>
+    <footer class="foot"><p>SOJA Evidence Systems · Synthetic examples only</p><a href="/">Evidence Manifest Template Pack</a></footer>
+  </div>
+</body>
+</html>
